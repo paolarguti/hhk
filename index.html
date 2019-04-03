@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <style>
+    /*#501A24
+    #7B2F24
+    #5A5B19*/
+    html, body {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      line-height: 1.414;
+      font-weight: 300;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    a {
+      color: #58A4B0;
+      text-decoration: none;
+    }
+
+    .script {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .container {
+      width: 1200px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .paragraph {
+      width: 600px;
+      max-width: 100%;
+    }
+    .btn {
+      padding: 1em 2em;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      background-color: #58A4B0;
+      letter-spacing: 0.03em;
+      border-radius: 3px;
+    }
+
+    .bg-primary {
+      background-color: #fafaee;
+    }
+
+    .bg-gm {
+      background-color: #501A24;
+    }
+
+    .red {
+      color: #7B2F24;
+    }
+    .bg-blue {
+      background-color: #58A4B0;
+    }
+    .tracked {
+      letter-spacing: 0.0375em;
+    }
+
+    h1, .f1 { font-size: 3.157rem; }
+
+    h2, .f2 { font-size: 2.369rem; }
+
+    h3, .f3 { font-size: 1.777rem; }
+
+    h4, .f4 { font-size: 1.333rem; }
+
+    .f6 { font-size: 0.750rem; }
+
+    .f7 { font-size: 0.563rem; }
+
+     /*desktop only*/
+    @media only screen and (min-width: 1025px) {
+      .section {
+        margin-right: -1rem;
+        margin-left: -1rem;
+      }
+    }
+    /*mobile and tablet*/
+    @media only screen and (max-width: 1024px) {
+      .container {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside class="bg-blue tc ttu f6 pv2 white fw4">
+    <p class="mb0 tracked">
+      <span class="mh2 di-ns dn"><i class="fas fa-clock"></i>&nbsp;Mon - Fri 11am - 10pm</span>
+      <span class="mh2"><i class="fas fa-map-marker-alt"></i>&nbsp;50 Citizen's Way, Frederick, MD 21703</span>
+      <span class="mh2 di-ns dn"><i class="fas fa-phone"></i>&nbsp;301 383 8790</span>
+    </p>
+  </aside>
+
+  <header class="pv3" style="background: #e3e6e2;">
+    <div class="container">
+      <div class="section flex items-center justify-between">
+        <div class="ph3">
+          <img src="./HHKitchenlogo.png" class="db w4">
+        </div>
+
+        <nav class="pt4 dn db-l ph3">
+          <ul class="list flex ttu fw6 f6 tracked">
+            <li class="mr3 pr2">About</li>
+            <li class="mr3 pr2">Restaurant</li>
+            <li class="mr3 pr2">Ice Cream Shop</li>
+            <li class="mr3 pr2">Home Delivery</li>
+            <li class="">Visit us</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div style="background: #e3e6e2;" class="pb5">
+      <div class="container">
+        <div class="cover bg-center flex justify-end mb4" style="background-image: url('./Restaurant3.png')">
+          <div class="w-40-ns w-100 bg-white-80 ph5-ns ph4 pv6-ns pv5 mb5 mb0-ns">
+            <div class="ph2-ns">
+              <h1 class="f1 mb2 lh-title script">Local Food Global Cuisine</h1>
+              <p class="mb4">Farm to fork food, served in a fast casual dining experience on beautiful Carrol Creek.</p>
+              <a href="" class="btn">Visit Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap section pt3">
+          <div class="w-25-l w-50-m w-100 tc ph3">
+            <h4 class="mb2 ttu tracked f5">Fast</h4>
+            <p>Get on a quick line, greet the attendant, pick what you like, sit and enjoy! Wait less, enjoy your food more.</p>
+          </div>
+
+          <div class="w-25-l w-50-m w-100 tc ph3">
+            <h4 class="mb2 ttu tracked f5">Local</h4>
+            <p>18 years of building our dairy farm helped us connect with over 200 local farmers that provide all of the produce and fresh meats we serve.</p>
+          </div>
+
+          <div class="w-25-l w-50-m w-100 tc ph3">
+            <h4 class="mb2 ttu tracked f5">Fresh</h4>
+            <p>Our menu changes with the seasons and the local harvest, helping us always serve food when is both delicious and nutritious.</p>
+          </div>
+
+          <div class="w-25-l w-50-m w-100 tc ph3">
+            <h4 class="mb2 ttu tracked f5">Affordable</h4>
+            <p>A casual dining experience help us keep the prices down, thus fulfilling our mission of making local food more accessible to our community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="pv5 flex flex-row-ns flex-column items-center">
+        <div class="w-40-ns w-100 ph4-ns">
+          <h2 class="f1 script mt0 mb2">Restaurant</h2>
+
+          <h4 class="ttu tracked f5">Farm to fork, Fast Casual Dining</h4>
+
+          <ul class="pl3">
+            <li>Quick, helthy options like soups, salads and bowls</li>
+            <li>Seasonal house-made specials</li>
+            <li>Vegan dishes available</li>
+          </ul>
+
+          <a href="" class="b">Visit us &#187;</a>
+        </div>
+
+        <div class="w-60-ns w-100 ph4-ns">
+          <img src="./porkloinwithveggies.png" class="w-100">
+        </div>
+      </div>
+
+
+      <div class="pv4 ph6-ns ph4 bg-near-white cover flex flex-row-ns flex-column items-center justify-center ba b--near-white" style="background-image: url('https://southmountaincreamery.com/wp-content/uploads/2017/01/bg_wood.jpg')">
+        <img src="./smc-logo.png" class="w-25-ns w4 mr4-ns mb0-ns mr0 mb3 db">
+
+        <div class="tl w-75-ns w-100">
+          <h3 class="mb2">Home Delivery</h3>
+
+          <p>Want to get the best of the restaurant delivered to your office or home? Learn more about our offerings and delivery areas on the South Mountain Creamery website.</p>
+
+          <a href="#" class="b">Get my meals delivered &#187;</a>
+        </div>
+      </div>
+
+
+      <div class="pv5 flex flex-row-ns flex-column items-center">
+        <div class="w-40-ns w-100 ph4-ns">
+          <h2 class="f1 script mt0 mb2">Ice Cream Shop</h2>
+          <h4 class="ttu tracked f5">By South Mountain Creamery</h4>
+
+
+          <ul class="pl3">
+            <li>Fresh Ice Cream</li>
+            <li>Ice Cream Sandwiches (Freshly baked cookies!)</li>
+            <li>Sundaes and Milkshakes</li>
+            <li>Adult-Only Milkshakes (Made with local spirts!)</li>
+            <li>Grab-and-go Ice Cream Pints and Dairy Products</li>
+          </ul>
+
+           <a href="" class="b">Visit us &#187;</a>
+        </div>
+
+        <div class="w-60-ns w-100 ph4-ns">
+          <img src="./pumpkincake.png" class="w-100">
+        </div>
+      </div>
+    </div>
+
+    <div id="instafeed"></div>
+
+  </main>
+
+  <footer class="">
+    <div class="bg-black-10" style="background-color: #e3e6e2;">
+      <div class="container flex flex-row-ns flex-column items-center justify-between pv4">
+        <div class="w-75 flex flex-row-ns flex-column">
+          <div class="w-third-ns w-100">
+            <h4 class="mb2 ttu tracked f5">Location</h4>
+            <p class="ttu">50 CITIZEN'S WAY<br>FREDERICK, MD 21703</p>
+          </div>
+
+          <div class="w-third-ns w-100">
+            <h4 class="mb2 ttu tracked f5">Hours</h4>
+            <p><strong>Mon - Sat:</strong>&nbsp;11am - 9pm</p>
+          </div>
+
+          <div class="w-third-ns w-100">
+            <h4 class="mb2 ttu tracked f5">Contact</h4>
+
+            <p class="mb0">301 383 8790</p>
+            <p>contact@harvesttownkitchen.com</p>
+            <div class="flex">
+              <i class="fab fa-facebook-f mh2"></i>
+              <i class="fab fa-instagram mh2"></i>
+              <i class="fab fa-yelp mh2"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-25-ns w4 pl4-ns pt0-ns pt4">
+          <img src="./smc-logo.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="tc pv2" style="background: #c4cac2">
+      <div class="container">
+        <a href="" class="f6 fw3 black">Políticas de Privacidad y Condiciones de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+  <!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg7aXv6Ie9VZtUqrXwi5omWBO2XJ1qofs&callback=initMap"></script> -->
+
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 'paolargz',
+        clientId: '3d7147bf275d426d93985a5992c4e209',
+        accessToken: '7934988.1677ed0.104bc6270c9441578ce5a4315d8554f5'
+    });
+
+    feed.run();
+
+    // function initMap() {
+    //   var hhk = {lat: 39.413022, lng: -77.4128974};
+
+    //   var map = new google.maps.Map(document.getElementById('map'), {
+    //     zoom: 16,
+    //     center: hhk
+    //   });
+
+    //   var marker = new google.maps.Marker({position: hhk, map: map});
+    // }
+  </script>
+
+</body>
+</html>
+
