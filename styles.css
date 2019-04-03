@@ -1,0 +1,98 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.414;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #58A4B0;
+  text-decoration: none;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph {
+  width: 600px;
+  max-width: 100%;
+}
+.btn {
+  padding: 1em 2em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #58A4B0;
+  letter-spacing: 0.03em;
+  border-radius: 3px;
+}
+
+.bg-primary {
+  background-color: #fafaee;
+}
+
+.bg-gm {
+  background-color: #501A24;
+}
+
+.red {
+  color: #7B2F24;
+}
+.bg-blue {
+  background-color: #58A4B0;
+}
+.tracked {
+  letter-spacing: 0.0375em;
+}
+
+h1, .f1 { font-size: 3.157rem; }
+
+h2, .f2 { font-size: 2.369rem; }
+
+h3, .f3 { font-size: 1.777rem; }
+
+h4, .f4 { font-size: 1.333rem; }
+
+.f6 { font-size: 0.750rem; }
+
+.f7 { font-size: 0.563rem; }
+
+.ar--square:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+ /*desktop only*/
+@media only screen and (min-width: 1025px) {
+  .section {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+/*mobile and tablet*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}

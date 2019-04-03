@@ -2,107 +2,12 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,400,700" rel="stylesheet">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-  <style>
-    /*#501A24
-    #7B2F24
-    #5A5B19*/
-    html, body {
-      font-family: 'Lato', sans-serif;
-      font-size: 18px;
-      line-height: 1.414;
-      font-weight: 300;
-    }
-
-    h1, h2, h3, h4 {
-      font-weight: 700;
-      margin-top: 0;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    a {
-      color: #58A4B0;
-      text-decoration: none;
-    }
-
-    .script {
-      font-family: 'Dancing Script', cursive;
-    }
-
-    .container {
-      width: 1200px;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .paragraph {
-      width: 600px;
-      max-width: 100%;
-    }
-    .btn {
-      padding: 1em 2em;
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      display: inline-block;
-      background-color: #58A4B0;
-      letter-spacing: 0.03em;
-      border-radius: 3px;
-    }
-
-    .bg-primary {
-      background-color: #fafaee;
-    }
-
-    .bg-gm {
-      background-color: #501A24;
-    }
-
-    .red {
-      color: #7B2F24;
-    }
-    .bg-blue {
-      background-color: #58A4B0;
-    }
-    .tracked {
-      letter-spacing: 0.0375em;
-    }
-
-    h1, .f1 { font-size: 3.157rem; }
-
-    h2, .f2 { font-size: 2.369rem; }
-
-    h3, .f3 { font-size: 1.777rem; }
-
-    h4, .f4 { font-size: 1.333rem; }
-
-    .f6 { font-size: 0.750rem; }
-
-    .f7 { font-size: 0.563rem; }
-
-     /*desktop only*/
-    @media only screen and (min-width: 1025px) {
-      .section {
-        margin-right: -1rem;
-        margin-left: -1rem;
-      }
-    }
-    /*mobile and tablet*/
-    @media only screen and (max-width: 1024px) {
-      .container {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-      }
-    }
-  </style>
+  <!-- styles -->
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -230,7 +135,7 @@
       </div>
     </div>
 
-    <div id="instafeed"></div>
+    <div id="instafeed" class="flex flex-wrap"></div>
 
   </main>
 
@@ -279,11 +184,15 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg7aXv6Ie9VZtUqrXwi5omWBO2XJ1qofs&callback=initMap"></script> -->
 
   <script type="text/javascript">
+
     var feed = new Instafeed({
         get: 'user',
-        userId: 'paolargz',
+        userId: '7934988',
         clientId: '3d7147bf275d426d93985a5992c4e209',
-        accessToken: '7934988.1677ed0.104bc6270c9441578ce5a4315d8554f5'
+        accessToken: '7934988.1677ed0.104bc6270c9441578ce5a4315d8554f5',
+        resolution: 'standard_resolution',
+        limit: 10,
+        template: '<div class="w-20 ar--square relative"><a href="{{link}}" class="db absolute absolute--fill overflow-hidden ba b--white bw1"><img src="{{image}}" class="w-100 db {{ resolution }}"/></a></div>'
     });
 
     feed.run();
