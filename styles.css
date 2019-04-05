@@ -1,5 +1,6 @@
 html, body {
   font-family: 'Lato', sans-serif;
+  color: #161615;
   font-size: 18px;
   line-height: 1.414;
   font-weight: 300;
@@ -15,7 +16,7 @@ p {
 }
 
 a {
-  color: #58A4B0;
+  color: #3c8aa7;
   text-decoration: none;
 }
 
@@ -35,30 +36,52 @@ a {
   max-width: 100%;
 }
 .btn {
-  padding: 1em 2em;
+  padding: 0.750em 1.777em;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  background-color: #58A4B0;
+  background-color: #3c8aa7;
   letter-spacing: 0.03em;
   border-radius: 3px;
 }
 
-.bg-primary {
-  background-color: #fafaee;
+.black {
+  color: #161615;
+}
+.b--gray {
+  border-color: #a6afa3;
+}
+.b--green {
+  border-color: #009345;
+}
+.b--light-gray {
+  border-color: #e3e6e2;
 }
 
-.bg-gm {
-  background-color: #501A24;
+.b--near-white {
+  border-color: #f7f8f6;
+}
+.bg-green {
+  background-color: #009345;
 }
 
-.red {
-  color: #7B2F24;
+.bg-light-blue {
+  background-color: #3c8aa7;
 }
-.bg-blue {
-  background-color: #58A4B0;
+
+.bg-gray {
+  background-color: #a6afa3;
 }
+
+.bg-light-gray {
+  background-color: #e3e6e2;
+}
+
+.bg-near-white {
+  background-color: #f7f8f6;
+}
+
 .tracked {
   letter-spacing: 0.0375em;
 }
