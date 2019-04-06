@@ -1,3 +1,8 @@
+.animated {
+  -webkit-animation-duration:0.2s;
+          animation-duration:0.2s;
+}
+
 html, body {
   font-family: 'Lato', sans-serif;
   color: #161615;
@@ -46,6 +51,9 @@ a {
   border-radius: 3px;
 }
 
+.br-3 {
+  border-radius: 3px;
+}
 .black {
   color: #161615;
 }
