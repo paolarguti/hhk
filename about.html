@@ -12,6 +12,9 @@
   <!-- styles -->
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
   <link rel="stylesheet" href="./styles.css">
+
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -183,6 +186,46 @@
       </div>
     </footer>
   </div>
+
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <!-- Instafeed -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: {
+        showMobileNav: false,
+      },
+
+      methods: {
+        scroll: function(id) {
+          this.showMobileNav = false;
+
+          document.getElementById(id).scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
+          });
+        },
+      },
+
+      mounted: function() {
+        var feed = new Instafeed({
+          get: 'user',
+          userId: '8407407927',
+          clientId: 'fc4426c751e949808bff39b4258a0c38',
+          accessToken: '8407407927.1677ed0.76107a5322604a72b2d1d58e55ac89cc',
+          resolution: 'standard_resolution',
+          limit: screen.width > 959 ? 10 : 6,
+          template: '<div class="w-20-l w-third-m w-50 ar--square relative"><div class="db absolute absolute--fill overflow-hidden ba bg-light-gray b--white bw2"><img src="{{image}}" class="w-100 db {{ resolution }} grow"/></div></div>'
+        });
+
+        feed.run();
+      }
+    });
+
+  </script>
+
 </body>
 </html>
-
