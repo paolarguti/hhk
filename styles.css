@@ -113,11 +113,22 @@ h4, .f4 { font-size: 1.333rem; }
   padding-top: 100%;
 }
 
+/*about page*/
+.about-hero {
+  background-image: url('./assets/fields.jpg');
+}
+
  /*desktop only*/
 @media only screen and (min-width: 1025px) {
   .section {
     margin-right: -1rem;
     margin-left: -1rem;
+  }
+  .about-hero {
+    background-position: 50% 10%;
+  }
+  .bg-none-l {
+    background: none;
   }
 }
 /*mobile and tablet*/

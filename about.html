@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex" />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+  crossorigin="anonymous">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <aside class="bg-light-blue tc ttu f6 pv2 white fw4">
+      <p class="mb0 tracked">
+        <span class="mh2"><i class="fas fa-map-marker-alt"></i>&nbsp;50 Citizen's Way, Frederick, MD 21703</span>
+        <span class="mh2 di-ns dn"><i class="fas fa-phone"></i>&nbsp;301 383 8790</span>
+      </p>
+    </aside>
+
+    <header class="pv3 bg-near-white">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div>
+            <a href="/"><img src="./assets/HHKitchenlogo.png" class="db w4"></a>
+          </div>
+
+          <nav>
+            <ul class="list flex-l dn ttu fw6 f6 tracked">
+              <li class="mr3 pr2">
+                <a href="/about" class="black">About</a>
+              </li>
+
+              <li class="mr3 pr2">
+                <a href="#section-restaurant" class="black" @click.prevent="scroll('section-restaurant')">The Restaurant</a>
+              </li>
+
+              <li class="mr3 pr2">
+                <a href="#section-creamery" class="black" @click.prevent="scroll('section-creamery')">Ice Cream Shop</a>
+              </li>
+
+              <li class="mr3 pr2">
+                <a href="#section-delivery" class="black" @click.prevent="scroll('section-delivery')">Home Delivery</a>
+              </li>
+
+              <li class="">
+                <a href="#section-hours" class="black" @click.prevent="scroll('section-hours')">Visit us</a>
+              </li>
+            </ul>
+
+            <a href="#" class="db dn-l" @click.prevent="showMobileNav = true">
+              <i class="fas fa-bars f4"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <transition
+      enter-active-class="animated slideInRight"
+      leave-active-class="animated slideOutRight">
+        <div v-show="showMobileNav" class="fixed absolute--fill bg-light-gray pa2" style="display: none;">
+          <div class="flex justify-between items-center mb4">
+            <img src="./assets/HHKitchenlogo.png" class="db w4">
+
+            <a href="" @click.prevent="showMobileNav = false">
+              <i class="fas fa-times f4"></i>
+            </a>
+          </div>
+
+          <nav class="">
+            <ul class="list ttu fw6 tracked pl0">
+              <li class="mb3">
+                <a href="" class="black">About</a>
+              </li>
+
+              <li class="mb3">
+                <a href="#section-restaurant" class="black" @click.prevent="scroll('section-restaurant')">The Restaurant</a>
+              </li>
+
+              <li class="mb3">
+                <a href="#section-creamery" class="black" @click.prevent="scroll('section-creamery')">Ice Cream Shop</a>
+              </li>
+
+              <li class="mb3">
+                <a href="#section-delivery" class="black" @click.prevent="scroll('section-delivery')">Home Delivery</a>
+              </li>
+
+              <li class="mb3">
+                <a href="#section-hours" class="black" @click.prevent="scroll('section-hours')">Visit us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </transition>
+    </header>
+
+    <main>
+      <div class="about-hero bg-near-white bg-top cover">
+        <div class="bg-white-60 bg-none-l w-100 h-100">
+          <div class="tc mb3 pv5 container">
+            <div class="paragraph center ph5-ns">
+              <h1 class="f1 mb2 lh-title script">Our History</h1>
+              <p class="mb4">Sprouted out of the comments of our friends and family. Watered by the love of healthy eating. Grown by the passion of supporting local agriculture.</p>
+
+              <a href="#section-hours" class="btn" @click.prevent="scroll('section-hours')">Learn the Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pv5">
+        <div class="paragraph center">
+          <div class="mb4">
+            <h3 class="mb2 ttu tracked f5">The seeds were sown...</h3>
+            <p>Our farm family have been dairy farmers in Frederick County, MD since 1981. We have worked hard to overcome many challenges and obstacles over the years including a barn fire, tornado, a growing family, and ever changing marketplace.
+            <p>In 2001, on the brink of bankruptcy, our family took a big risk, ignoring the nah sayers, and opened South Mountain Creamery. We had no idea at the time that this decision and action would set our family farm on a course to reaches beyond our imagination.</p>
+          </div>
+
+          <div class="mb4">
+            <h3 class="mb2 ttu tracked f5">We put down roots..</h3>
+            <p>Since 2017 South Mountain Creamery has created its own unique Ice cream creations, as well as glass bottled milk, yogurts and cheeses.</p>
+
+            <p>Through our home delivery service we now deliver the entire farmers market to your door, offering eggs, meats, breads, produce, and much more. Our delivery service not only supports our local farm, but the entire local farming community. We don’t just talk the talk, but we walk the walk…. Know your Farmers… Know your food!</p>
+          </div>
+
+          <h3 class="mb2 ttu tracked f5">The "Harvest" has just begun...</h3>
+          <p>Have you ever had one of the times when everything just came together? In 2018 we brought together over 18 years experience growing, producing and sourcing local food, with two talented chefs ready for a new adventure, and a great location in downtown Frederick. Hometown Harvest Kitchen was born!</p>
+
+          <p>Our mission has always been to make local food more accessible to our community regardless if this is through our milkmen or through our new restaurant.   Hometown Harvest Kitchen will create a unique fast casual farm to fork restaurant sharing our passion for local food on your plate.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="">
+      <div class="bg-light-gray">
+        <div class="container flex flex-row-l flex-column items-center justify-between pt4 pb4-l pb3">
+
+          <div class="w-two-thirds-l w-100 flex flex-row-ns flex-column mb4 mb0-l">
+            <div class="w-60-l w-50-m w-100 pr5-l mb4 mb0-ns">
+              <h4 class="mb2 ttu tracked f5">Kitchen News</h4>
+              <p class="tl-ns">Get the latest news and exclusive member's offers</p>
+
+              <div class="flex flex-row-ns flex-column items-start items-stretch-ns">
+                <input type="search" class="pv2 ph3 w-100 ma0-ns mr1-ns ba b--white br-3 mb3 mb0-ns" placeholder="email@gmail.com">
+                <a href="" class="btn f6 h-100" @click.prevent>
+                  <span class="nowrap">sign up</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="w-40-l w-50-m w-100 pl4-m">
+              <h4 class="mb2 ttu tracked f5">Contact</h4>
+
+              <p class="mb0">301 383 8790</p>
+              <p>info@hometownharvestkitchen.com</p>
+              <div class="flex">
+
+                <i class="fab fa-facebook-f mr3"></i>
+                <i class="fab fa-instagram mr3"></i>
+                <i class="fab fa-yelp mr3"></i>
+                <i class="fab fa-foursquare"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-third-l pl5-l pr0-l ph4 flex items-center justify-end">
+            <img src="./assets/HHKitchenlogo-bw.png" class="db w4 mw-50 mr4">
+            <img src="./assets/smc-logo-bw.png" class="db w4 mw-50">
+          </div>
+        </div>
+      </div>
+
+      <div class="tc pv2 bg-gray">
+        <div class="container">
+          <a href="" class="f6 fw3 black">Terms of Service&nbsp;&nbsp;&bull;&nbsp;&nbsp;Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
