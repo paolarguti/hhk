@@ -4,7 +4,7 @@
 }
 
 html, body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
   color: #161615;
   font-size: 18px;
   line-height: 1.414;
@@ -12,7 +12,8 @@ html, body {
 }
 
 h1, h2, h3, h4 {
-  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   margin-top: 0;
 }
 
@@ -25,8 +26,8 @@ a {
   text-decoration: none;
 }
 
-.script {
-  font-family: 'Dancing Script', cursive;
+.sans {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -37,18 +38,21 @@ a {
 }
 
 .paragraph {
-  width: 600px;
+  width: 700px;
   max-width: 100%;
 }
+
 .btn {
   padding: 0.750em 1.777em;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  background-color: #3c8aa7;
+  background-color: #f26239;
   letter-spacing: 0.03em;
   border-radius: 3px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }
 
 .br-3 {
